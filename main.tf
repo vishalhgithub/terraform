@@ -19,12 +19,6 @@ resource "aws_instance" "natural" {
       sudo apt-get update -y
       sudo apt-get install awscli -y
     fi
-
-    # Define the S3 bucket and the script name
-    BUCKET_NAME="mynatural"
-    SCRIPT1_NAME="config.sh"
-    SCRIPT2_NAME="NaturalAPIMYRUN.sh"
-    SCRIPT3_NAME="naturalMVCMYRUN.txt"
     
     # change the directory
     cd /home/ubuntu
@@ -36,7 +30,7 @@ resource "aws_instance" "natural" {
     chmod +x /home/ubuntu/natural/dotnet.sh
 
     # Make the script executable
-    chmod +x /home/ubuntu/Atural/PI.sh
+    chmod +x /home/ubuntu/natural/API.sh
 
     # Make the script executable
     chmod +x /home/ubuntu/natural/MVC.sh

@@ -1,1 +1,0 @@
-ami_id=ami-0b004c2d0ebdd710a
